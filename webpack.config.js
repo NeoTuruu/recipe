@@ -5,11 +5,11 @@ module.exports = {
   mode: "production",
   entry: "./src/js/index.js",
   output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "main.js",
+    path: path.resolve(__dirname, "docs"),
+    filename: "js/main.js",
   },
   devServer: {
-    static: "./dist",
+    static: "./docs",
   },
   plugins: [
     new HtmlWebpackPlugin({
